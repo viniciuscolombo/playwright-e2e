@@ -15,7 +15,7 @@ test.describe('Testes no DemoQA text ox', () => {
     await page.goto(BASE_URL);
   });
 
-  test('Preencher formulário text-box com sucesso', async () => {
+  test('Preencher formulário Text-box com sucesso', async () => {
     await demoQaPage.preencherFormularioTextBox();
     await demoQaPage.validarEnvioFormulario();
   });
