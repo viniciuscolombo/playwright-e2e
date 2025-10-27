@@ -34,8 +34,11 @@ jobs:
         uses: actions/setup-node@v4.0.0
         with:
           node-version: 21 
+      - name: Install SonarScanner CLI
+        run: npm install -g sonar-scanner
+
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@v2.0.2      
+        run: sonar-scanner
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
