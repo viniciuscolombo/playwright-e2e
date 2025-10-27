@@ -3,7 +3,7 @@ import { join } from 'path';
 import { TheConfig } from 'sicolo';
 import DemoQaPage from '../support/pages/DemoQaPage';
 
-test.describe('Testes no DemoQA Text Box', () => {
+test.describe('Testes no DemoQA text ox', () => {
   const CONFIG = join(__dirname, '../support/fixtures/config.yml');
   let demoQaPage: DemoQaPage;
   const BASE_URL = TheConfig.fromFile(CONFIG)
